@@ -1,4 +1,4 @@
-#include "stdafx.h"
+п»ї#include "stdafx.h"
 
 #include <iostream>
 
@@ -18,7 +18,7 @@ public:
 
 };
 
-class Triangle : public Figurs{ //трикутник
+class Triangle : public Figurs{ //С‚СЂРёРєСѓС‚РЅРёРє
 
 public:
 
@@ -30,7 +30,7 @@ public:
 
 };
 
-class Square : public Figurs { //крвадрати
+class Square : public Figurs { //РєСЂРІР°РґСЂР°С‚Рё
 
 public:
 
@@ -42,7 +42,7 @@ public:
 
 };
 
-class Circle : public Figurs{ //круги
+class Circle : public Figurs{ //РєСЂСѓРіРё
 
 public:
 
@@ -54,7 +54,7 @@ public:
 
 };
 
-class Arbitrary : public Triangle{ //довільний трикутник
+class Arbitrary : public Triangle{ //РґРѕРІС–Р»СЊРЅРёР№ С‚СЂРёРєСѓС‚РЅРёРє
 
 public:
 
@@ -62,13 +62,13 @@ public:
 
 	{
 
-		cout << "Введiть сторону 1: ";cin >> side1;
+		cout << "Р’РІРµРґiС‚СЊ СЃС‚РѕСЂРѕРЅСѓ 1: ";cin >> side1;
 
-		cout << "Введiть сторону 2: ";cin >> side2;
+		cout << "Р’РІРµРґiС‚СЊ СЃС‚РѕСЂРѕРЅСѓ 2: ";cin >> side2;
 
-		cout << "Введiть сторону 3: ";cin >> side3;
+		cout << "Р’РІРµРґiС‚СЊ СЃС‚РѕСЂРѕРЅСѓ 3: ";cin >> side3;
 
-		cout << "Введiть радiус вписаного кола в трикутник: ";cin >> radius;
+		cout << "Р’РІРµРґiС‚СЊ СЂР°РґiСѓСЃ РІРїРёСЃР°РЅРѕРіРѕ РєРѕР»Р° РІ С‚СЂРёРєСѓС‚РЅРёРє: ";cin >> radius;
 
 		return 0;
 
@@ -98,7 +98,7 @@ private: double side1;
 
 };
 
-class Straight : public Triangle{ //прямокутний трикутник
+class Straight : public Triangle{ //РїСЂСЏРјРѕРєСѓС‚РЅРёР№ С‚СЂРёРєСѓС‚РЅРёРє
 
 public:
 
@@ -110,9 +110,9 @@ public:
 
 	int Get()
 
-	{cout << "Введiть катет 1: ";cin >> side1;
+	{cout << "Р’РІРµРґiС‚СЊ РєР°С‚РµС‚ 1: ";cin >> side1;
 
-	cout << "Введiть катет 2: ";cin >> side2;
+	cout << "Р’РІРµРґiС‚СЊ РєР°С‚РµС‚ 2: ";cin >> side2;
 
 	return 0;
 
@@ -122,7 +122,7 @@ public:
 
 };
 
-class Square_correct : public Square { //квадрат
+class Square_correct : public Square { //РєРІР°РґСЂР°С‚
 
 public:
 
@@ -130,7 +130,7 @@ public:
 
 	int Get(){
 
-	cout << "Введiть сторону : ";
+	cout << "Р’РІРµРґiС‚СЊ СЃС‚РѕСЂРѕРЅСѓ : ";
 
 	cin >> side;
 
@@ -142,7 +142,7 @@ public:
 
 };
 
-class Rectangle : public Square{ //прямокутник
+class Rectangle : public Square{ //РїСЂСЏРјРѕРєСѓС‚РЅРёРє
 
 public:
 
@@ -152,9 +152,9 @@ public:
 
 	int Get()
 
-	{cout << "Введiть сторону 1 : "; cin >> side1;
+	{cout << "Р’РІРµРґiС‚СЊ СЃС‚РѕСЂРѕРЅСѓ 1 : "; cin >> side1;
 
-	cout << "Введiть сторону 2 : "; cin >> side2;return 0;}
+	cout << "Р’РІРµРґiС‚СЊ СЃС‚РѕСЂРѕРЅСѓ 2 : "; cin >> side2;return 0;}
 
 	double Squares() {return side1*side2;}
 
@@ -162,7 +162,7 @@ public:
 
 	};
 
-class Parallelogram : public Square{ //паралелограм
+class Parallelogram : public Square{ //РїР°СЂР°Р»РµР»РѕРіСЂР°Рј
 
 public:
 
@@ -176,11 +176,11 @@ public:
 
 	{
 
-		cout << "Введiть сторону 1 : "; cin >> side1;
+		cout << "Р’РІРµРґiС‚СЊ СЃС‚РѕСЂРѕРЅСѓ 1 : "; cin >> side1;
 
-		cout << "Введiть сторону 2 : "; cin >> side2;
+		cout << "Р’РІРµРґiС‚СЊ СЃС‚РѕСЂРѕРЅСѓ 2 : "; cin >> side2;
 
-		cout << "Введiть кут(sin) : "; cin >> angle;
+		cout << "Р’РІРµРґiС‚СЊ РєСѓС‚(sin) : "; cin >> angle;
 
 		return 0;}
 
@@ -190,7 +190,7 @@ public:
 
 };
 
-class Diamond : public Square{ //ромб
+class Diamond : public Square{ //СЂРѕРјР±
 
 public:
 
@@ -200,9 +200,9 @@ public:
 
 	int Get(){
 
-		cout << "Введiть діагональ 1 : "; cin >> side1;
+		cout << "Р’РІРµРґiС‚СЊ РґС–Р°РіРѕРЅР°Р»СЊ 1 : "; cin >> side1;
 
-		cout << "Введiть діагональ 2 : "; cin >> side2;
+		cout << "Р’РІРµРґiС‚СЊ РґС–Р°РіРѕРЅР°Р»СЊ 2 : "; cin >> side2;
 
 		return 0;}
 
@@ -210,19 +210,19 @@ public:
 
 };
 
-class Round : public Circle { //коло
+class Round : public Circle { //РєРѕР»Рѕ
 
 public:
 
 	double r;
 
-	int Get(){cout << "Введiть радіус : "; cin >> r;return 0;}
+	int Get(){cout << "Р’РІРµРґiС‚СЊ СЂР°РґС–СѓСЃ : "; cin >> r;return 0;}
 
 	double Long() {return 2 * r;}
 
 };
 
-class Ellipse : public Circle { //еліпс
+class Ellipse : public Circle { //РµР»С–РїСЃ
 
 public:
 
@@ -232,9 +232,9 @@ public:
 
 	{
 
-		cout << "Введiть довжину великої пiвосi: "; cin >> a;
+		cout << "Р’РІРµРґiС‚СЊ РґРѕРІР¶РёРЅСѓ РІРµР»РёРєРѕС— РїiРІРѕСЃi: "; cin >> a;
 
-		cout << "Введiть довжину малої пiвосi: "; cin >> b;
+		cout << "Р’РІРµРґiС‚СЊ РґРѕРІР¶РёРЅСѓ РјР°Р»РѕС— РїiРІРѕСЃi: "; cin >> b;
 
 		return 0;
 
@@ -256,23 +256,23 @@ int main()
 
 	setlocale(LC_ALL, "Ukrainian");
 
-	cout << "Виберiть Фiгуру :" << endl;
+	cout << "Р’РёР±РµСЂiС‚СЊ Р¤iРіСѓСЂСѓ :" << endl;
 
-	cout <<"1. Довiльний трикутник" << endl;
+	cout <<"1. Р”РѕРІiР»СЊРЅРёР№ С‚СЂРёРєСѓС‚РЅРёРє" << endl;
 
-	cout <<"2. Правильний трикутник" << endl;
+	cout <<"2. РџСЂР°РІРёР»СЊРЅРёР№ С‚СЂРёРєСѓС‚РЅРёРє" << endl;
 
-	cout <<"3. Квадрат" << endl;
+	cout <<"3. РљРІР°РґСЂР°С‚" << endl;
 
-	cout <<"4. Прямокутник" << endl;
+	cout <<"4. РџСЂСЏРјРѕРєСѓС‚РЅРёРє" << endl;
 
-	cout <<"5. Паралелограм" << endl;
+	cout <<"5. РџР°СЂР°Р»РµР»РѕРіСЂР°Рј" << endl;
 
-	cout <<"6. Ромб " << endl;
+	cout <<"6. Р РѕРјР± " << endl;
 
-	cout <<"7. Коло " << endl;
+	cout <<"7. РљРѕР»Рѕ " << endl;
 
-	cout <<"8. Елiпс" << endl;
+	cout <<"8. Р•Р»iРїСЃ" << endl;
 
 	int choise;
 
@@ -288,9 +288,9 @@ int main()
 
 		cout << endl;
 
-		cout << "Площа="<< ptr1->Square() << endl;
+		cout << "РџР»РѕС‰Р°="<< ptr1->Square() << endl;
 
-		cout << "Периметр=" << ptr1->Perimeter() << endl;
+		cout << "РџРµСЂРёРјРµС‚СЂ=" << ptr1->Perimeter() << endl;
 
 	}
 
@@ -302,7 +302,7 @@ int main()
 
 		cout << endl;
 
-		cout<< "Площа=" << ptr2->Square() << endl;
+		cout<< "РџР»РѕС‰Р°=" << ptr2->Square() << endl;
 
 	}
 
@@ -314,9 +314,9 @@ int main()
 
 		cout << endl;
 
-		cout << "Площа=" << ptr3->Squares() << endl;
+		cout << "РџР»РѕС‰Р°=" << ptr3->Squares() << endl;
 
-		cout << "Периметр=" << ptr3->Perimeter() << endl;
+		cout << "РџРµСЂРёРјРµС‚СЂ=" << ptr3->Perimeter() << endl;
 
 	}
 
@@ -328,9 +328,9 @@ int main()
 
 		cout << endl;
 
-		cout << "Площа=" << ptr4->Squares() << endl;
+		cout << "РџР»РѕС‰Р°=" << ptr4->Squares() << endl;
 
-		cout << "Периметр=" << ptr4->Perimeter() << endl;
+		cout << "РџРµСЂРёРјРµС‚СЂ=" << ptr4->Perimeter() << endl;
 
 	}
 
@@ -342,9 +342,9 @@ int main()
 
 		cout << endl;
 
-		cout << "Площа=" << ptr5->Squares() << endl;
+		cout << "РџР»РѕС‰Р°=" << ptr5->Squares() << endl;
 
-		cout << "Периметр=" << ptr5->Perimeter() << endl;
+		cout << "РџРµСЂРёРјРµС‚СЂ=" << ptr5->Perimeter() << endl;
 
 	}
 
@@ -356,7 +356,7 @@ int main()
 
 		cout << endl;
 
-		cout << "Площа=" << ptr6->Squares() << endl;
+		cout << "РџР»РѕС‰Р°=" << ptr6->Squares() << endl;
 
 	}
 
@@ -368,7 +368,7 @@ int main()
 
 		ptr7->Get();
 
-		cout << "Довжина кола=" << ptr7->Long()<<"П" << endl;
+		cout << "Р”РѕРІР¶РёРЅР° РєРѕР»Р°=" << ptr7->Long()<<"Рџ" << endl;
 
 	}
 
@@ -378,13 +378,13 @@ int main()
 
 		cout << ptr8->Get() << endl;
 
-		cout << "Фокальний периметр=" << ptr8->Perimeter() << endl;
+		cout << "Р¤РѕРєР°Р»СЊРЅРёР№ РїРµСЂРёРјРµС‚СЂ=" << ptr8->Perimeter() << endl;
 
 	}
 
 	else {
 
-		cout << "Ви ввели не вірне число";
+		cout << "Р’Рё РІРІРµР»Рё РЅРµ РІС–СЂРЅРµ С‡РёСЃР»Рѕ";
 
 	}
 
